@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>🎄 Quay Số Noel 🎄</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- SETTINGS -->
+<div id="settings">
+  ⚙
+  <div class="panel">
+    <label>Background
+      <input type="file" id="bgInput" accept="image/*">
+    </label>
+    <label>Nhạc quay
+      <input type="file" id="spinInput" accept="audio/*">
+    </label>
+    <label>Nhạc thắng
+      <input type="file" id="winInput" accept="audio/*">
+    </label>
+  </div>
+</div>
+
+<h1>🎄 CHÚC MỪNG NGƯỜI YÊU CỦA ANH 🎄</h1>
+<div id="number">------</div>
+
+<div class="buttons">
+  <button onclick="start()">▶ QUAY</button>
+  <button onclick="stop()">⏹ DỪNG</button>
+</div>
+
+<audio id="spin" src="spin.mp3" loop></audio>
+<audio id="win" src="win.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
